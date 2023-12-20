@@ -169,13 +169,14 @@ section {
   color: #bdbdbd;
   line-height: 1.6;
 }
-
 .info-box {
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
-  width: 370px;
+  max-width: 100%; /* Ensures it doesn't overflow its container */
   margin: 1rem 0 2rem;
+  box-sizing: border-box; /* Includes padding and borders in the width and height */
 }
 
 .info-box h5 {
