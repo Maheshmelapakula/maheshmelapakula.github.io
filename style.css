@@ -750,7 +750,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--secon-bg-color);
+  /* background: var(--secon-bg-color); */
 }
 
 #resumeBtn {
