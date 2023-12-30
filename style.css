@@ -170,13 +170,11 @@ section {
   line-height: 1.6;
 }
 .info-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: inline-flex;
+  justify-content: space-around;
   align-items: center;
-  max-width: 100%; /* Ensures it doesn't overflow its container */
+  width: 370px;
   margin: 1rem 0 2rem;
-  box-sizing: border-box; /* Includes padding and borders in the width and height */
 }
 
 .info-box h5 {
@@ -189,7 +187,6 @@ section {
   font-size: 0.9rem;
   color: #bdbdbd;
 }
-
 .btn-box {
   display: flex;
   justify-content: space-between;
@@ -626,7 +623,7 @@ section {
 
 .portfolio-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   gap: 2rem;
 }
 
@@ -664,8 +661,8 @@ section {
   color: var(--bg-color);
   width: 100%;
   height: 100%;
-  opacity: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), #12f7ff);
+  opacity: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), #999999);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -674,20 +671,22 @@ section {
   transition: 0.5s;
   padding: 0 2rem;
 }
-
+/* 
 .port-box:hover .port-content {
   opacity: 1;
-}
+} */
 
 .port-box:hover .port-image img {
   transform: scale(1.1);
 }
 .port-content h3 {
-  font-size: 1.5rem;
+  color: var(--text-color);
+  font-size: 1.6rem;
   font-weight: 600;
 }
 .port-content p {
-  font-size: 0.8rem;
+  color: var(--text-color);
+  font-size: 1rem;
   margin: 5px 0 15px 0;
 }
 
@@ -708,6 +707,7 @@ section {
   font-size: 1.3rem;
   color: var(--secon-bg-color);
 }
+
 
 /* contact section css ------------------------------------- */
 #contact {
